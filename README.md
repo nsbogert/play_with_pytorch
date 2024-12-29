@@ -1,1 +1,1 @@
-This is just a bunch of miscellaneous exploriation in python. 
+Explorations in deep learning, GenAI, and Agentic frameworks here. 
