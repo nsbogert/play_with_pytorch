@@ -124,21 +124,6 @@ def multi_tool_output(query):
     print(f"Agent: {response}")
     print ("\n")
 
-'''
-def user_agent_multiturn(queries):
-    for query in queries:
-        print(f"User: {query}")
-        
-        response = ""
-        # stream through messages corresponding to queries, exclude metadata
-        for msg, metadata in app.stream(
-            {"messages": [HumanMessage(content=query)]}, config, stream_mode="messages"):
-            if msg.content and not isinstance(msg, HumanMessage) and msg.name is not None:
-                response += msg.content
-        
-        print("Agent: " + response + "\n")
-'''
-
 def user_agent_multiturn(queries):
     for query in queries:
         multi_tool_output(query)
